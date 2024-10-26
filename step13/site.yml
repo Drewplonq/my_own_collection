@@ -1,0 +1,9 @@
+---
+- name: Testing my module
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Run my module
+      my_own_module:
+        path: "/tmp/test.txt"
+        content: "Hello world"
